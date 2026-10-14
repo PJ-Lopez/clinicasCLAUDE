@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Edit(schema.dbml)",
+      "Edit(backend/**)",
+      "Edit(frontend/**)",
+      "Bash(npm run db:sql)",
+      "Bash(npm run build)",
+      "Bash(npm run start:dev)"
+    ],
+    "ask": [
+      "Bash(npm run db:create:*)",
+      "Bash(npm run seed)",
+      "Bash(mysql:*)"
+    ],
+    "deny": [
+      "Read(backend/.env)",
+      "Read(frontend/.env.local)"
+    ]
+  }
+}
